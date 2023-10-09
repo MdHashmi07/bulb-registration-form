@@ -1,0 +1,115 @@
+body {
+    box-sizing: border-box;
+}
+
+.gradient-custom-3 {
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+}
+
+.gradient-custom-4 {
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+}
+
+.bulb-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #8c8789;
+}
+
+.hidden {
+    display: none;
+}
+
+.switch-on-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transform-style: preserve-3d;
+    background: #fff0f0;
+}
+
+.switch-on-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: #a29e9f;
+    box-shadow: 0 0 0 2px #807e80, 0 0.625em 5px 0 #4f4e4e;
+    transform: translate3d(0, 0.75em, -1em);
+}
+
+.switch-on-button:hover {
+    background-color: #ffe9e9;
+    transform: translate(0, 0.25em);
+}
+
+.switch-on-button:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0.5 0 #ffe3e2;
+    transform: translate(0, .5em, -1em);
+}
+
+.switch-on-button:active {
+    background-color: #ffe9e9;
+    transform: translate(0, .75em);
+}
+
+.switch-on-button:active::after {
+    box-shadow: 0 0 0 2px #8c8789, 0.5 0 #f5f0ef;
+    transform: translate(0, 0, -1em);
+}
+
+.switch-off-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transform-style: preserve-3d;
+    background: rgb(185, 184, 184);
+}
+
+.switch-off-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: #a29e9f;
+    box-shadow: 0 0 0 2px #807e80, 0 0.625em 5px 0 #4f4e4e;
+    transform: translate3d(0, 0.75em, -1em);
+}
+
+.switch-off-button:hover {
+    background-color: #ffe9e9;
+    transform: translate(0, 0.25em);
+}
+
+.switch-off-button:hover::before {
+    box-shadow: 0 0 0 2px #8c8789, 0.5 0 #f5f0ef;
+    transform: translate(0, .5em, -1em);
+}
+
+.switch-off-button:active {
+    background-color: #ffe9e9;
+    transform: translate(0, .75em);
+}
+
+.switch-off-button:active::after {
+    box-shadow: 0 0 0 2px #8c8789, 0.5 0 #f5f0ef;
+    transform: translate(0, 0, -1em);
+}
+
+.logout-button {
+    transform: rotate(180deg);
+}
+
+.welcome-user-name {
+    text-transform: capitalize;
+}
